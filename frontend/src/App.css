@@ -1,0 +1,125 @@
+/* Global */
+body {
+    margin: 0;
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: linear-gradient(135deg, #dbeafe, #f0f9ff);
+    min-height: 100vh;
+}
+
+/* App wrapper */
+.app {
+    max-width: 85%;
+    margin: 60px auto;
+    text-align: center;
+}
+
+.error {
+    margin-top: 15px;
+    color: #dc2626;
+    font-weight: 600;
+    background: #fee2e2;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+
+/* Search box */
+input {
+    width: 60%;
+    max-width: 500px;
+    padding: 14px;
+    font-size: 16px;
+    border-radius: 12px;
+    border: none;
+    outline: none;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);
+}
+
+/* Card */
+.card {
+    margin: 30px auto;
+    background: rgba(255, 255, 255, 0.94);
+    padding: 28px;
+    border-radius: 20px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+    width: 100%;
+}
+
+/* City name */
+.card h2 {
+    margin: 0;
+    font-size: 28px;
+}
+
+/* Current temperature row */
+.current {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 22px;
+    margin: 20px 0;
+}
+
+/* Main icon */
+.icon {
+    font-size: 56px;
+}
+
+/* Main temperature */
+.temp {
+    font-size: 56px;
+    font-weight: bold;
+}
+
+/* Extra info (wind, AQI) */
+.card p {
+    font-size: 16px;
+    margin: 6px 0;
+}
+
+/* Hourly forecast row */
+.hourly {
+    display: flex;
+    gap: 16px;
+    overflow-x: auto;
+    margin-top: 28px;
+    padding-bottom: 10px;
+}
+
+/* Hour card */
+.hour {
+    min-width: 80px;
+    background: #f1f5f9;
+    border-radius: 14px;
+    padding: 12px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+}
+
+/* Hour icon */
+.small-icon {
+    display: block;
+    font-size: 22px;
+    margin: 6px 0;
+}
+
+/* Loading text */
+.loading {
+    margin-top: 15px;
+    font-size: 16px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    input {
+        width: 90%;
+    }
+
+    .temp {
+        font-size: 44px;
+    }
+
+    .icon {
+        font-size: 44px;
+    }
+}
