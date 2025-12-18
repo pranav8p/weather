@@ -211,7 +211,3 @@ project-root/
 │
 └── README.md
 ```
-
-
-
-Just say the word.
